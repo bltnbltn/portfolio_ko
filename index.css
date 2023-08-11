@@ -1,0 +1,508 @@
+/* Font Face --------------------------------- */
+@font-face {
+  font-family: Pretendard-Light;
+  src: url('./fonts/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: Pretendard-Regular;
+  src: url('./fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Pretendard-Medium;
+  src: url('./fonts/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: Pretendard-Bold;
+  src: url('./fonts/Pretendard-Bold.woff') format('woff');
+}
+
+/* Colours --------------------------------- */
+:root {
+  --text-color: #101010;
+  --white-text-color: #fff;
+  --background-color: #fff;
+  --accent-color: #3f93fa;
+}
+
+/* Default --------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* Structrue --------------------------------- */
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+/* Nav --------------------------------- */
+.nav_logo img {
+  width: 60px;
+  /* height: 30px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.myLogo {
+  font-size: 24px;
+  font-family: Pretendard-Medium;
+  color: var(--text-color);
+  letter-spacing: 3px;
+}
+
+.nav_menu {
+  display: flex;
+  font-family: Pretendard-Regular;
+  font-size: 14px;
+  margin: 20px;
+  padding-left: 0;
+  padding-top: 3px;
+}
+
+.nav_menu li {
+  margin: 22px;
+  border-bottom: transparent solid 1px;
+  padding-bottom: 4px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.nav_menu li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav_menu li:hover {
+  border-bottom: var(--accent-color) solid 1px;
+}
+
+.nav_menu a.active {
+  border-bottom: transparent solid 1px;
+  padding-bottom: 4px;
+  border-bottom: var(--accent-color) solid 1px;
+}
+
+.nav_deco {
+  margin-left: 90px;
+}
+
+.nav_deco img {
+  width: 40px;
+  margin-top: 20px;
+}
+
+/* Hamburger */
+
+.navbar_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 5%;
+  font-size: 24px;
+}
+
+/* Hero --------------------------------- */
+.hero {
+  overflow: visible;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+.chatBtn {
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 2rem;
+  width: 170px;
+  height: 30px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Pretendard-Medium;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  border: none;
+}
+
+.chatBtn a {
+  color: var(--text-color);
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.main_title {
+  color: var(--text-color);
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-family: ivypresto-display, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 125%;
+  color: rgb(34, 36, 34);
+}
+
+/* Project --------------------------------- */
+.myLogos {
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.project_1,
+.project_2 {
+  min-height: 60px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: minmax(auto, 1fr);
+  grid-template-columns: 1fr 0.5fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: 100px;
+  display: grid;
+}
+
+.project_1 img,
+.project_2 img {
+  grid-area: 1 / 1 / 3 / 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project_dis {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  padding-left: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #181818;
+}
+
+.project_dis h1 {
+  color: var(--white-text-color);
+  font-family: Pretendard-Regular;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.project_dis button {
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ffffff1f;
+  border-radius: 16px;
+  padding: 4px 10px;
+  font-family: Pretendard-Regular;
+  border: none;
+  margin-bottom: 34px;
+}
+
+.project_dis p {
+  color: #ffffff;
+  font-family: Pretendard-Regular;
+  border-radius: 16px;
+}
+/* Footer --------------------------------- */
+
+.social_link,
+.copyright {
+  font-family: Pretendard-Regular;
+  font-size: 12px;
+  color: var(--text-color);
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.social_link svg {
+  width: 24px;
+  height: 24px;
+  margin: 1rem;
+}
+
+.copyright {
+  margin: 2rem;
+}
+
+.footer {
+  margin: 5rem;
+}
+
+.mail path:hover,
+.linkdin path:hover,
+.behance path:hover {
+  fill: var(--accent-color);
+}
+
+/* Modal Images */
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 72%); /* Black w/ opacity */
+}
+
+.top_fadeIn {
+  animation-name: example;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes example {
+  0% {
+    opacity: 0;
+    top: -30px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.bottom_fadeIn {
+  animation-name: example2;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes example2 {
+  0% {
+    opacity: 0;
+    top: 30px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/* MOBILE, ~ 767 */
+
+@media screen and (max-width: 767px) {
+  .navbar .navbar_toggleBtn {
+    padding: 20px 0px;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+  .main_title {
+    font-family: ivypresto-display, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .hero {
+    max-width: 90%;
+    margin-top: 2rem;
+    padding: 4rem 0rem;
+  }
+
+  .myLogo {
+    font-size: 20px;
+    font-family: Pretendard-Medium;
+    color: var(--text-color);
+    letter-spacing: 2px;
+  }
+  .project_1,
+  .project_2 {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .project_1 img,
+  .project_2 img {
+    display: block;
+  }
+
+  .project_dis {
+    height: 200px;
+  }
+
+  .project_dis h1 {
+    color: var(--white-text-color);
+    font-family: Pretendard-Regular;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .project_dis button {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ffffff1f;
+    border-radius: 16px;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    font-family: Pretendard-Regular;
+  }
+
+  .project_dis p {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Pretendard-Light;
+    border-radius: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+  }
+
+  /* fixed nav bar */
+  .navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav_logo {
+    margin-left: 1rem;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_deco {
+    display: none;
+  }
+
+  .navbar_toggleBtn {
+    display: block;
+  }
+
+  .nav_menu.active {
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    padding: 10rem;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .navbar__dropdown {
+    position: fixed;
+    width: 100%;
+    background-color: red;
+    display: none;
+  }
+  .dropdown.active {
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .nav_menu li:hover {
+    border-bottom: 1px solid transparent;
+  }
+
+  .nav_menu a:hover {
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .mail path,
+  .linkdin path,
+  .behance path {
+    fill: #101010;
+  }
+
+  /* modal */
+  .modal-content {
+    width: 80%;
+  }
+}
