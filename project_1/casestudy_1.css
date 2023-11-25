@@ -12,11 +12,12 @@
 
 .casestudy_1_dis {
   padding: 40px 0px;
+  width: 80%;
+  max-width: 860px;
   margin: auto;
-  width: 50%;
   color: var(--black-text-color);
   font-family: Pretendard-Regular;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Font Style */

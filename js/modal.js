@@ -13,7 +13,8 @@ for (var i = 0; i < images.length; i++) {
   var img = images[i];
   // and attach our click listener for this image.
   img.onclick = function (evt) {
-    modal.style.display = 'flex';
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // 스크롤 금지
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   };
@@ -22,4 +23,5 @@ for (var i = 0; i < images.length; i++) {
 // Get the <span> element that closes the modal
 modal.addEventListener('click', () => {
   modal.style.display = 'none';
+  document.body.style.overflow = 'auto'; // 스크롤 허용
 });

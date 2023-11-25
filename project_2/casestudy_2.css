@@ -8,9 +8,8 @@
 
 .casestudy_size {
   display: block;
-  max-width: 1000px;
+  max-width: 860px;
   margin: auto;
-  padding: 0px 100px 0px 100px;
   margin-top: 60px;
   margin-bottom: 100px;
 }
@@ -28,7 +27,8 @@
 .casestudy_2_prototyping img {
   display: flex;
   margin: auto;
-  width: 100%;
+  width: 80%;
+  max-width: 1400px;
   height: 100%;
 }
 

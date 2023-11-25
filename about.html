@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./about.css">
   <title>Yura Lee | About</title>
   <link rel="icon" href="./img/favicon.ico">
 
@@ -28,9 +28,9 @@
       <li><a onclick="clickSingleA(this)" class="single" href="./index.html">WORK</a></li>
       <li><a onclick="clickSingleA(this)" class="single" href="./creation.html">CREATION</a></li>
       <li><a onclick="clickSingleA(this)" class="single active" href="about.html">ABOUT</a></li>
-      <li><a onclick="clickSingleA(this)" class="single" href="./img/Yura_Lee_Resume.pdf" download="Yura_Lee_Resume.pdf"
+      <!-- <li><a onclick="clickSingleA(this)" class="single" href="./img/Yura_Lee_Resume.pdf" download="Yura_Lee_Resume.pdf"
           type="submit
-      ">RESUME</a></li>
+      ">RESUME</a></li> -->
     </ul>
 
     <div class="nav_deco">
@@ -47,12 +47,9 @@
     </div>
     <div class="about_title top_fadeIn">
       <h1>Hi there! ◡̎</h1>
-      <p>I'm Yura Lee, currently majoring in Multimedia Design and Web Development at Humber College in Canada. If
-        you're curious about why I design, it's because I'm passionate about discovering hidden gems, from small details
-        to innovative ideas. If you might ask how, I put my effort into understanding human needs and thinking
-        strategically to
-        solve problems. So, I design
-        for people to bring pleasure and improve their lives.
+      <p>다양한 탐구와 끊임없는 배움을 통해 더 활기찬 삶을 추구하는 디자이너 이유라입니다.
+        마침표로만 멈춰 있는 것은 항상 새로운 목표를 가지게끔 하는 동기이자, 배움을 위한 원동력이였습니다.
+        이제는 이러한 경험들을 토대로 나아가, 물음표를 갖고 더 나은 삶을 위해 고민하고 연구하는 디자이너가 되고자 합니다.
       </p>
       <h2>I ENJOY</h2>
       <div class="emoji_flex">
@@ -70,17 +67,18 @@
 
   <section class="container top_fadeIn">
     <form onsubmit="sendEmail(); reset(); return false;">
-      <h3>Love to hear from you, <br>Let's chat!</h3>
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="text" id="phone" placeholder="Phone Number" required>
-      <textarea type="message" rows="4" id="message" placeholder="Message"></textarea>
-      <button type="submit">Send</button>
+      <h3>Let's chat!</h3>
+      <input type="text" id="name" placeholder="회사명 or 이름" required>
+      <input type="email" id="email" placeholder="이메일" required>
+      <input type="text" id="phone" placeholder="연락처" required>
+      <textarea type="message" rows="4" id="message" placeholder="내용을 입력하세요"></textarea>
+      <button type="submit">보내기</button>
     </form>
   </section>
 
   <footer class="footer">
-    <!-- <div class="social_link">
+    <!-- 소셜 링크 -->
+    <div class="social_link">
       <a href="mailto: yuralee1713@gmail.com">
         <svg class="mail" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -88,13 +86,7 @@
             fill="#c3c5c9" />
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/yuralees
-        " target="_blank"><svg class="linkdin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M3 4.97493C3 4.40253 3.20271 3.9303 3.60811 3.55826C4.01351 3.1862 4.54055 3.00018 5.18919 3.00018C5.82626 3.00018 6.34169 3.18334 6.73552 3.54968C7.14092 3.92745 7.34363 4.4197 7.34363 5.02644C7.34363 5.57594 7.14672 6.03384 6.7529 6.40018C6.3475 6.77795 5.81467 6.96684 5.15444 6.96684H5.13707C4.49999 6.96684 3.98456 6.77795 3.59073 6.40018C3.19691 6.0224 3 5.54731 3 4.97493ZM3.22587 20.0002V8.52947H7.08301V20.0002H3.22587ZM9.22008 20.0002H13.0772V13.5951C13.0772 13.1944 13.1236 12.8853 13.2162 12.6678C13.3784 12.2786 13.6245 11.9495 13.9546 11.6805C14.2847 11.4114 14.6988 11.2769 15.1969 11.2769C16.4942 11.2769 17.1429 12.1412 17.1429 13.8699V20.0002H21V13.4234C21 11.7291 20.5946 10.4441 19.7838 9.56835C18.973 8.6926 17.9016 8.25472 16.5695 8.25472C15.0753 8.25472 13.9112 8.89007 13.0772 10.1608V10.1951H13.0598L13.0772 10.1608V8.52947H9.22008C9.24324 8.89579 9.25483 10.0348 9.25483 11.9466C9.25483 13.8584 9.24324 16.5429 9.22008 20.0002Z"
-            fill="#c3c5c9" />
-        </svg>
-      </a>
+
       <a href="https://www.behance.net/ura" target="_blank"><svg class="behance" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -102,7 +94,7 @@
             fill="#c3c5c9" />
         </svg>
       </a>
-    </div> -->
+    </div>
     <div class="copyright">
       <p>&copy 2023 Yura Lee</p>
     </div>

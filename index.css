@@ -21,7 +21,7 @@
 
 /* Colours --------------------------------- */
 :root {
-  --text-color: #101010;
+  --text-color: #222327;
   --white-text-color: #fff;
   --background-color: #fff;
   --accent-color: #3f93fa;
@@ -52,13 +52,13 @@ a {
 
 .wrapper {
   width: 80%;
-  margin: auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Nav --------------------------------- */
 .nav_logo img {
-  width: 60px;
-  /* height: 30px; */
+  width: 80px;
 }
 
 .navbar {
@@ -88,7 +88,7 @@ a {
   margin: 22px;
   border-bottom: transparent solid 1px;
   padding-bottom: 4px;
-  letter-spacing: 2px;
+  letter-spacing: 0.6px;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ a {
   margin-top: 20px;
 }
 
-/* Hamburger */
+/* Hamburger Menu*/
 
 .navbar_toggleBtn {
   display: none;
@@ -131,25 +131,28 @@ a {
   text-align: center;
   max-width: 1200px;
   margin: auto;
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 8rem 2rem;
 }
 
-.chatBtn {
-  cursor: pointer;
+.main_title {
+  font-family: Pretendard-Medium;
+  text-align: center;
+  font-size: 50px;
+  line-height: 145%;
+  color: var(--text-color);
+  margin: auto;
+  color: var(--text-color);
+}
+
+.project_arrow {
   font-size: 14px;
   margin-top: 2rem;
-  width: 170px;
   height: 30px;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: Pretendard-Medium;
   letter-spacing: 2px;
-  text-decoration: underline;
   border: none;
-}
-
-.chatBtn a {
-  color: var(--text-color);
 }
 
 .floating {
@@ -171,25 +174,7 @@ a {
   }
 }
 
-.main_title {
-  color: var(--text-color);
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  font-family: ivypresto-display, serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 125%;
-  color: rgb(34, 36, 34);
-}
-
 /* Project --------------------------------- */
-.myLogos {
-  width: 100%;
-  text-align: center;
-  border-radius: 6px;
-}
 
 .project_1,
 .project_2 {
@@ -215,7 +200,6 @@ a {
   grid-area: 1 / 2 / 3 / 3;
   display: flex;
   padding-left: 20px;
-  /* justify-content: center; */
   align-items: center;
   background-color: #181818;
 }
@@ -244,6 +228,7 @@ a {
   font-family: Pretendard-Regular;
   border-radius: 16px;
 }
+
 /* Footer --------------------------------- */
 
 .social_link,
@@ -275,51 +260,7 @@ a {
   fill: var(--accent-color);
 }
 
-/* Modal Images */
-#myImg {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {
-  opacity: 0.7;
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: flex;
-  width: 80%;
-  max-width: 600px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-} */
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 72%); /* Black w/ opacity */
-}
-
+/* 페이드 효과 */
 .top_fadeIn {
   animation-name: example;
   animation-duration: 2s;
@@ -336,11 +277,32 @@ a {
     top: 0px;
   }
 }
-
 .bottom_fadeIn {
   animation-name: example2;
   animation-duration: 2s;
   position: relative;
+  opacity: 0; /* 초기에 투명도를 0으로 설정 */
+  top: 30px; /* 초기에 상단으로 이동한 상태로 설정 */
+  animation-fill-mode: forwards; /* 애니메이션이 끝난 후 상태를 유지하도록 설정 */
+}
+
+/* 각 요소에 대한 지연 시간을 설정하여 순차적으로 나타나도록 함 */
+.bottom_fadeIn:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.bottom_fadeIn:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.bottom_fadeIn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+/* ... 추가적인 요소에 대한 지연 시간 설정 */
+
+@keyframes example2 {
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 @keyframes example2 {
@@ -357,25 +319,31 @@ a {
 /* MOBILE, ~ 767 */
 
 @media screen and (max-width: 767px) {
+  .nav_logo img {
+    width: 60px;
+  }
+
   .navbar .navbar_toggleBtn {
     padding: 20px 0px;
+  }
+
+  .chatBtn {
+    margin-top: 0.5rem;
   }
 
   .wrapper {
     width: 90%;
   }
   .main_title {
-    font-family: ivypresto-display, serif;
+    font-family: ivypresto-display, Pretendard-Regular;
     font-weight: 300;
     font-style: normal;
-    font-size: 30px;
-    line-height: 120%;
+    font-size: 20px;
+    line-height: 140%;
   }
 
   .hero {
-    max-width: 90%;
-    margin-top: 2rem;
-    padding: 4rem 0rem;
+    height: 400px;
   }
 
   .myLogo {
