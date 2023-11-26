@@ -107,10 +107,6 @@ a {
   border-bottom: var(--accent-color) solid 1px;
 }
 
-.nav_deco {
-  margin-left: 90px;
-}
-
 .nav_deco img {
   width: 40px;
   margin-top: 20px;
