@@ -23,18 +23,6 @@ function preload() {
   }
 }
 
-preload(
-  '../img/art/drawing_1.png',
-  '../img/art/drawing_2.png',
-  '../img/art/drawing_3.png',
-  '../img/art/drawing_4.png',
-  '../img/art/drawing_5.png',
-  '../img/art/eros1.png',
-  '../img/art/matilda.jpg',
-  '../img/art/pho.jpg',
-  '../img/art/merry.jpg'
-);
-
 // Activating Nav Bar
 function clickSingleA(a) {
   items = document.querySelectorAll('.single.active');
