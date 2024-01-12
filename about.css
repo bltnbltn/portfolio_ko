@@ -20,7 +20,7 @@
 }
 
 .about_title h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-family: ivypresto-display, serif;
   font-weight: 300;
 }
@@ -94,7 +94,7 @@ form h3 {
   font-family: ivypresto-display, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 40px;
+  font-size: 50px;
   color: var(--text-color);
   margin-bottom: 20px;
 }
