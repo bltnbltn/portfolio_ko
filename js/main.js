@@ -7,11 +7,6 @@ const nav_menu = document.querySelectorAll('.nav_menu li');
 toggleBtn.addEventListener('click', (e) => {
   e.preventDefault();
   menu.classList.toggle('active');
-  if (menu.classList.contains('active')) {
-    navbar.style.padding = '10px 0px 0px 0px';
-  } else {
-    // navbar.style.padding = '14px 0px';
-  }
 });
 
 //Free load Images

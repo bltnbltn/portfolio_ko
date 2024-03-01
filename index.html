@@ -11,69 +11,76 @@
   <link rel="icon" href="./img/favicon.png">
 </head>
 
-<body>
-  <div class="wrapper">
+<body class="index-background">
+  <nav class="navbar">
 
-    <nav class="navbar">
-
-      <div class="nav_logo">
-        <a href="./index.html">
-          <img src="./img/logo/web.jpg" alt="">
-        </a>
-      </div>
-
-      <ul class="nav_menu">
-        <li><a onclick="clickSingleA(this)" class="single active" href="index.html">WORK</a></li>
-        <li><a onclick="clickSingleA(this)" class="single" href="./creation.html">CREATION</a></li>
-        <li><a onclick="clickSingleA(this)" class="single" href="./about.html">ABOUT</a></li>
-        <!-- <li><a onclick="clickSingleA(this)" class="single" href="./Yura_Lee_Resume.pdf" download="Yura_Lee_Resume.pdf" -->
-        <!-- type="submit -->
-        <!-- ">RESUME</a></li> -->
-      </ul>
-
-      <a href="#" class="navbar_toggleBtn"><img src="./img/icon/hamburger.svg" alt="">
+    <div class="nav_logo">
+      <a href="./index.html">
+        <img src="./img/logo/web.png" alt="">
       </a>
+    </div>
 
-    </nav>
+    <ul class="nav_menu">
+      <li><a onclick="clickSingleA(this)" class="single active" href="index.html">WORK</a></li>
+      <li><a onclick="clickSingleA(this)" class="single" href="./creation.html">CREATION</a></li>
+      <li><a onclick="clickSingleA(this)" class="single" href="./about.html">ABOUT</a></li>
+      <!-- <li><a onclick="clickSingleA(this)" class="single" href="./Yura_Lee_Resume.pdf" download="Yura_Lee_Resume.pdf" -->
+      <!-- type="submit -->
+      <!-- ">RESUME</a></li> -->
+    </ul>
 
-    <section class="hero">
+    <a href="#" class="navbar_toggleBtn"><img src="./img/icon/hamburger.svg" alt="">
+    </a>
 
-      <p class="main_title bottom_fadeIn ">
-        다양한 시각을 통해 문제를 바라보고<br> 빠른 실행으로 효율을 중시하는 <br>UI/UX Designer 이유라 입니다.
-      </p>
-      <div class="project_arrow bottom_fadeIn">
-        <div class="floating">
-          ↓ VIEW PROJECTS
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero_container bottom_fadeIn">
+      <h1 class="heading"><span>I have</span> curiosity.<br><span>I think of </span>why.<br><span>I find</span> the
+        answers.</h1>
+
+      <div class="main_title bottom_fadeIn ">
+        <p>다양한 시각을 통해 문제를 바라보고 빠른 실행으로 효율을 중시하는<br>UI/UX Designer 이유라 입니다.
+        </p>
+        <div class="project_arrow floating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 140 140" fill="none"
+            stroke="#3f93fa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-arrow-down-circle">
+            <circle cx="70" cy="70" r="65" fill="none"></circle>
+            <polyline points="45 70 70 95 95 70"></polyline>
+            <line x1="70" y1="45" x2="70" y2="95"></line>
+          </svg>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class=" project_container bottom_fadeIn">
+  <section class=" project_container bottom_fadeIn">
 
-      <div class="project_1">
-        <a href="./project_1/casestudy_1.html">
-          <img src="./img/project_1.jpg">
-          <div class="project_dis">
-            <h1>This is title</h1>
-            <p>This is description</p>
-          </div>
-        </a>
-      </div>
+    <div class="project_1">
+      <a href="./project_1/casestudy_1.html">
+        <img src="./img/project_1.jpg">
+        <div class="project_dis">
+          <h1>This is title</h1>
+          <p>This is description</p>
+        </div>
+      </a>
+    </div>
 
-      <div class="project_2">
-        <a href="#">
-          <img src="./img/project_1.jpg">
-          <div class="project_dis">
-            <h1>This is title</h1>
-            <p>This is description</p>
-          </div>
-        </a>
-      </div>
+    <div class="project_2">
+      <a href="#">
+        <img src="./img/project_1.jpg">
+        <div class="project_dis">
+          <h1>This is title</h1>
+          <p>This is description</p>
+        </div>
+      </a>
+    </div>
 
-    </section>
+  </section>
 
 
-  </div>
   <footer class="footer bottom_fadeIn">
 
     <!-- 소셜 링크 -->

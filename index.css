@@ -53,39 +53,28 @@ a {
 
 /* Structrue --------------------------------- */
 
-.wrapper {
-  width: 90%;
-  max-width: 1500px;
-  margin: 0 auto;
+.index-background {
+  background-image: linear-gradient(to right, #ecf0f8, #ffffff);
 }
 
 /* Nav --------------------------------- */
 
 .nav_logo img {
-  width: 80px;
+  width: 40px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
-}
-
-.myLogo {
-  font-size: 24px;
-  font-family: Pretendard-Medium;
-  color: var(--text-color);
-  letter-spacing: 3px;
+  padding: 0px 32px;
 }
 
 .nav_menu {
   display: flex;
   font-family: Pretendard-Regular;
   font-size: 14px;
-  margin: 32px;
-  padding-left: 0;
-  padding-top: 3px;
+  left: 0;
 }
 
 .nav_menu li {
@@ -111,16 +100,10 @@ a {
   border-bottom: var(--accent-color) solid 2px;
 }
 
-.nav_deco img {
-  width: 40px;
-  margin-top: 20px;
-}
-
 /* Hamburger Menu*/
 
 .navbar_toggleBtn {
   display: none;
-  position: absolute;
   right: 5%;
   font-size: 24px;
 }
@@ -128,32 +111,47 @@ a {
 /* Hero --------------------------------- */
 
 .hero {
-  overflow: visible;
+  min-height: calc(
+    100vh - 100px
+  ); /* 주소 표시줄과 네비게이션 바의 높이를 고려하여 조정합니다. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 7rem 2rem;
+  overflow: hidden; /* 요소를 넘어가는 부분을 숨깁니다. */
+}
+
+.hero_container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero_container span {
+  font-weight: 100;
+  color: var(--text-color);
+}
+
+.heading {
+  color: var(--accent-color);
+  font-size: clamp(70px, 6vw, 6vw);
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 .main_title {
-  font-family: Pretendard-Regular;
-  text-align: center;
-  font-size: 50px;
+  font-family: Pretendard-Light;
+  font-size: 20px;
   line-height: 150%;
+  letter-spacing: -0.02em;
   color: var(--text-color);
-  margin: auto;
-  color: var(--text-color);
+  margin-top: 3%;
 }
 
 .project_arrow {
-  font-size: 14px;
-  margin-top: 3rem;
-  height: 30px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: Pretendard-Medium;
-  letter-spacing: 2px;
-  border: none;
+  margin-top: 60px;
 }
 
 .floating {
@@ -182,12 +180,12 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  margin-bottom: 160px;
+  padding: 0% 8% 14% 8%;
 }
 
 .project_1 img,
 .project_2 img {
-  width: 100%; /* Make images responsive */
+  width: 100%;
 }
 
 .project_dis {
@@ -225,7 +223,6 @@ a {
 }
 
 .footer {
-  background-color: #fafafa;
   padding: 4rem;
 }
 
@@ -289,50 +286,37 @@ a {
   /* Nav --------------------------------- */
 
   .nav_logo img {
-    width: 60px;
-  }
-
-  .navbar .navbar_toggleBtn {
-    padding: 20px 0px;
+    width: 30px;
   }
 
   /* Hamburger Menu*/
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0px;
-  }
-
-  /* fixed nav bar */
-  .navbar {
     position: fixed;
-
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #fff;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
 
   .nav_menu {
     display: none;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    border-top: 1px solid var(--border1-color);
+    top: 100%;
     width: 100%;
-  }
-
-  .nav_logo {
-    margin-left: 1rem;
+    background-image: linear-gradient(to right, #ecf0f8, #ffffff);
   }
 
   .nav_menu li {
     width: 100%;
     text-align: center;
-  }
-
-  .nav_deco {
-    display: none;
   }
 
   .navbar_toggleBtn {
@@ -350,26 +334,34 @@ a {
     border-bottom: 2px solid transparent;
   }
 
-  .nav_menu a:hover {
-    border-bottom: 2px solid var(--accent-color);
-  }
-
   /* modal */
   .modal-content {
     width: 80%;
   }
+
   /* Hero --------------------------------- */
 
   .hero {
-    margin: 150px 0px 60px 0px;
-    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30% 6%;
   }
 
+  .hero_container {
+    display: block;
+  }
+
+  .heading {
+    font-size: 46px;
+    font-weight: 500;
+  }
   .main_title {
-    font-family: Pretendard-Regular;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 160%;
+    margin: 0;
+  }
+
+  .main_title p {
+    margin: 30px 0px;
   }
 
   /* Project --------------------------------- */
