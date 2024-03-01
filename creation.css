@@ -100,7 +100,7 @@
 .drawing_container .row2 {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1.4fr 1fr 1.4fr;
+  grid-template-columns: 1.3fr 1.1fr 1.4fr;
   grid-template-rows: auto;
   padding-bottom: 2rem;
 }
@@ -160,5 +160,9 @@
   .drawing_container .row1,
   .drawing_container .row2 {
     gap: 1rem;
+  }
+
+  .drawing_container .row2 {
+    grid-template-columns: 1fr;
   }
 }
