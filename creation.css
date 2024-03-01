@@ -4,30 +4,26 @@
 }
 
 .modal-content {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 600px;
+  height: auto;
   text-align: center;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
+  color: #ffffff;
   padding: 10px 0;
-  height: 150px;
+  font-family: Pretendard-Regular;
+  font-size: 18px;
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display: flex;
+  flex-direction: column;
   position: fixed; /* Stay in place */
+  justify-content: center;
+  align-items: center;
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
@@ -35,8 +31,6 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 72%); /* Black w/ opacity */
 }
 
 /* Branding --------------------------------- */
@@ -133,6 +127,10 @@
 /* MOBILE, ~ 767 */
 
 @media screen and (max-width: 767px) {
+  .modal-content {
+    width: 80%;
+  }
+
   .heading {
     margin-top: 2rem;
   }
@@ -149,6 +147,7 @@
     margin: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    padding: 0px 16px;
   }
 
   .drawing_container {

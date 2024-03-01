@@ -35,6 +35,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -54,7 +58,7 @@ a {
 /* Structrue --------------------------------- */
 
 .index-background {
-  background-image: linear-gradient(to right, #ecf0f8, #ffffff);
+  background-image: linear-gradient(to bottom right, #ffffff, #ecf7ff);
 }
 
 /* Nav --------------------------------- */
@@ -111,14 +115,12 @@ a {
 /* Hero --------------------------------- */
 
 .hero {
-  min-height: calc(
-    100vh - 100px
-  ); /* 주소 표시줄과 네비게이션 바의 높이를 고려하여 조정합니다. */
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden; /* 요소를 넘어가는 부분을 숨깁니다. */
+  overflow: hidden;
 }
 
 .hero_container {
@@ -180,7 +182,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 0% 8% 14% 8%;
+  padding: 4% 8% 14% 8%;
 }
 
 .project_1 img,
@@ -311,7 +313,14 @@ a {
     border-top: 1px solid var(--border1-color);
     top: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, #ecf0f8, #ffffff);
+    background-color: #fff;
+  }
+
+  .nav_menu.active {
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    padding: 10rem;
   }
 
   .nav_menu li {
@@ -320,14 +329,26 @@ a {
   }
 
   .navbar_toggleBtn {
+    width: 34px;
+    height: 34px;
     display: block;
   }
 
-  .nav_menu.active {
-    height: 100vh;
-    display: flex;
-    margin: auto;
-    padding: 10rem;
+  .navbar_toggleBtn .line1,
+  .navbar_toggleBtn .line3 {
+    transition: transform 0.3s;
+    transform-origin: center;
+  }
+  .navbar_toggleBtn.active .line1 {
+    transform: rotate(45deg) translateY(11px) translateX(0px);
+  }
+
+  .navbar_toggleBtn.active .line3 {
+    transform: rotate(-45deg) translateY(-11px) translateX(0px);
+  }
+
+  .navbar_toggleBtn.active .line2 {
+    display: none;
   }
 
   .nav_menu li:hover {
@@ -346,6 +367,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 30% 6%;
+    height: 100vh;
   }
 
   .hero_container {

@@ -13,10 +13,14 @@ for (var i = 0; i < images.length; i++) {
   var img = images[i];
   // and attach our click listener for this image.
   img.onclick = function (evt) {
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
+
     document.body.style.overflow = 'hidden'; // 스크롤 금지
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
+
+    // Change background color when modal is active
+    modal.style.backgroundColor = 'rgba(26, 27, 28, 0.848)';
   };
 }
 
@@ -24,4 +28,6 @@ for (var i = 0; i < images.length; i++) {
 modal.addEventListener('click', () => {
   modal.style.display = 'none';
   document.body.style.overflow = 'auto'; // 스크롤 허용
+
+  document.body.style.backgroundColor = 'initial';
 });
