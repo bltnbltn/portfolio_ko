@@ -62,15 +62,16 @@ function clickSingleA(a) {
   a.className = 'single active';
 }
 
-// 화살표 클릭하면 project conianter로 스크롤링
 document.addEventListener('DOMContentLoaded', function () {
   var link = document.querySelector('.project_arrow');
   var container = document.querySelector('.project_container');
 
   link.addEventListener('click', function (e) {
     e.preventDefault();
+    var isMobile = window.innerWidth <= 768; // 모바일인지 확인
     var navbarHeight = document.querySelector('.navbar').offsetHeight;
-    var scrollToPosition = container.offsetTop - navbarHeight;
-    window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+    var scrollOffset = isMobile ? navbarHeight : 0; // 모바일이면 네비게이션 바 높이를 뺌
+    var containerTop = container.getBoundingClientRect().top;
+    window.scrollTo({ top: containerTop - scrollOffset, behavior: 'smooth' });
   });
 });
