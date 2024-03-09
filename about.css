@@ -2,18 +2,18 @@
   width: 90%;
   display: flex;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 60px auto;
 }
 
 .about_img img {
-  max-width: 380px;
+  max-width: 400px;
   width: 100%;
   border-radius: 20px;
 }
 
 .about_title {
   font-family: Pretendard-Light;
-  margin: 1rem 0rem 2rem 2rem;
+  margin-left: 80px;
 }
 
 .about_title h1 {
@@ -37,11 +37,15 @@
 }
 
 .emoji_flex {
-  display: flex;
+  display: block;
+}
+
+.emoji_flex span {
+  font-size: 15px;
 }
 
 .emoji_flex p {
-  margin: 5px;
+  margin: 0px;
 }
 
 .arrow {
@@ -66,9 +70,7 @@
 /* Contact form --------------------------------- */
 
 .container {
-  margin-top: 80px;
-  border-top: 0.5px solid #d6dee9;
-  background: #eceff3;
+  background: #eef1f9;
   width: 100%;
   display: flex;
   align-items: center;

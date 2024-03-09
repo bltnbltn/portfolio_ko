@@ -180,7 +180,7 @@ a {
 .project_section {
   font-family: Pretendard-Light;
   background-color: #fff;
-  padding: 60px 0px;
+  padding: 60px 0px 40px 0px;
 }
 
 .heading h1 {
@@ -196,7 +196,7 @@ a {
 .project_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 2rem;
   max-width: 1300px;
   margin: auto;
 }
