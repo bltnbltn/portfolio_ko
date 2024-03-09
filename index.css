@@ -55,11 +55,6 @@ a {
   text-decoration: none;
 }
 
-/* Structrue --------------------------------- */
-.index-background {
-  background-image: linear-gradient(to bottom right, #ffffff, #e8f2f8);
-}
-
 /* Nav --------------------------------- */
 
 .nav_logo img {
@@ -71,6 +66,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0px 80px;
+  background-color: transparent;
 }
 
 .nav_menu {
@@ -117,6 +113,7 @@ a {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  background-image: linear-gradient(to bottom, #ffffff, #f3f6fc, #e5effa);
 }
 
 .hero_container {
