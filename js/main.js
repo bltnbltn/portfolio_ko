@@ -64,7 +64,7 @@ function clickSingleA(a) {
 
 document.addEventListener('DOMContentLoaded', function () {
   var link = document.querySelector('.project_arrow');
-  var container = document.querySelector('.project_container');
+  var container = document.querySelector('.project_section');
 
   link.addEventListener('click', function (e) {
     e.preventDefault();
