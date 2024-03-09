@@ -11,9 +11,9 @@
 .creation_heading h1 {
   max-width: 1300px;
   margin: auto;
-  font-size: 36px;
+  font-size: 70px;
   font-family: ivypresto-display;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--text-color);
   padding: 120px 0px 20px 0px;
   color: var(--white-text-color);
@@ -21,7 +21,7 @@
 
 .creation_heading p {
   font-family: Pretendard-Regular;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .drawing_container {
@@ -80,7 +80,7 @@
   }
 
   .creation_heading h1 {
-    font-size: 24px;
+    font-size: 50px;
   }
 
   .drawing_container .row1,
