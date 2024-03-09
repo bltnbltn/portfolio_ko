@@ -188,9 +188,9 @@ a {
   margin: auto;
   font-size: 36px;
   font-family: ivypresto-display, serif;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--text-color);
-  padding: 120px 0px 26px 0px;
+  padding: 120px 0px 30px 0px;
 }
 
 .project_container {
@@ -210,13 +210,15 @@ a {
   margin: 20px 0px;
 }
 
-.project_dis h1 {
+.project_title:first-child {
   color: var(--text-color);
+  font-size: 22px;
   margin-bottom: 12px;
 }
 
 .project_dis p {
   color: var(--text-color);
+  font-size: 18px;
 }
 
 /* Branding --------------------------------- */
@@ -494,9 +496,17 @@ a {
     gap: 30px;
   }
 
+  .project_title:first-child {
+    font-size: 20px;
+  }
+
+  .project_dis p {
+    font-size: 16px;
+  }
+
   .heading h1 {
-    font-size: 24px;
-    padding: 40px 0px 16px 0px;
+    font-size: 26px;
+    padding: 60px 0px 30px 0px;
   }
 
   /* Branding --------------------------------- */

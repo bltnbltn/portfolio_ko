@@ -4,15 +4,22 @@
   width: 100%;
   height: 100%;
   background-color: #121316;
-}
-
-.drawing_section h1,
-.drawing_section p {
   color: var(--white-text-color);
   text-align: center;
 }
 
-.drawing_section p {
+.creation_heading h1 {
+  max-width: 1300px;
+  margin: auto;
+  font-size: 36px;
+  font-family: ivypresto-display;
+  font-weight: 400;
+  color: var(--text-color);
+  padding: 120px 0px 20px 0px;
+  color: var(--white-text-color);
+}
+
+.creation_heading p {
   font-family: Pretendard-Regular;
   margin-bottom: 60px;
 }
@@ -70,6 +77,10 @@
     display: grid;
     justify-content: center;
     padding-bottom: 1rem;
+  }
+
+  .creation_heading h1 {
+    font-size: 24px;
   }
 
   .drawing_container .row1,

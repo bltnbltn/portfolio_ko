@@ -11,9 +11,9 @@ toggleBtn.addEventListener('click', (e) => {
   // 햄버거 메뉴가 활성화되면 스크롤을 금지
   if (menu.classList.contains('active')) {
     document.body.style.overflow = 'hidden';
-    navbar.style.backgroundColor = '#fff'; // 배경색을 빨간색으로 변경
+    navbar.style.backgroundColor = '#fff';
   } else {
-    document.body.style.overflow = ''; // 스크롤 금지 해제
+    document.body.style.overflow = '';
   }
 });
 
