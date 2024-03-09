@@ -40,6 +40,17 @@ window.addEventListener('scroll', function () {
       navbar.style.backgroundColor = 'transparent';
     }
   }
+  if (window.location.pathname === '/creation.html') {
+    var navbar = document.querySelector('.navbar');
+    if (window.innerWidth <= 768) {
+      // 모바일 뷰포트 너비 체크
+      if (window.scrollY > 0) {
+        navbar.style.backgroundColor = '#fff';
+      } else {
+        navbar.style.backgroundColor = '#fff';
+      }
+    }
+  }
 });
 
 //Free load Images
