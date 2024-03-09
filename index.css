@@ -57,50 +57,47 @@ a {
 
 /* Structrue --------------------------------- */
 .index-background {
-  background-image: linear-gradient(to bottom right, #ffffff, #ecf7ff);
+  background-image: linear-gradient(to bottom right, #ffffff, #e8f2f8);
 }
 
 /* Nav --------------------------------- */
 
 .nav_logo img {
-  width: 40px;
+  width: 34px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 32px;
+  padding: 0px 80px;
 }
 
 .nav_menu {
   display: flex;
   font-family: Pretendard-Regular;
-  font-size: 14px;
+  font-size: 16px;
   left: 0;
 }
 
 .nav_menu li {
-  margin: 22px;
-  border-bottom: transparent solid 2px;
-  padding-bottom: 8px;
+  margin: 22px 0px;
   letter-spacing: 0.6px;
   text-decoration: none;
 }
 
 .nav_menu li a {
-  color: var(--text-color);
+  color: rgb(123, 123, 125);
   text-decoration: none;
+  padding: 22px;
 }
 
-.nav_menu li:hover {
-  border-bottom: var(--accent-color) solid 2px;
+.nav_menu li a:hover {
+  color: var(--accent-color);
 }
 
 .nav_menu a.active {
-  border-bottom: transparent solid 2px;
-  padding-bottom: 8px;
-  border-bottom: var(--accent-color) solid 2px;
+  color: var(--accent-color);
 }
 
 /* Hamburger Menu*/
@@ -180,39 +177,39 @@ a {
 .project_section {
   font-family: Pretendard-Light;
   background-color: #fff;
-  padding: 60px 0px 40px 0px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 80px 30px;
 }
 
 .heading h1 {
-  max-width: 1300px;
   margin: auto;
-  font-size: 36px;
+  font-size: 24px;
   font-family: ivypresto-display, serif;
   font-weight: 400;
   color: var(--text-color);
-  padding: 120px 0px 30px 0px;
+  margin-right: 200px;
 }
 
 .project_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 1300px;
-  margin: auto;
+  display: inline-block;
+  max-width: 800px;
 }
 
 .project_1 img,
 .project_2 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 .project_dis {
-  margin: 20px 0px;
+  margin: 10px 0px 80px 0;
 }
 
 .project_title:first-child {
   color: var(--text-color);
-  font-size: 22px;
+  font-size: 30px;
   margin-bottom: 12px;
 }
 
@@ -225,23 +222,25 @@ a {
 .logo_section {
   background-color: #fff;
   padding-bottom: 60px;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo_container {
   width: 100%;
   display: grid;
   padding-bottom: 4rem;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  max-width: 1300px;
-  margin: auto;
+  max-width: 800px;
 }
 
 .myLogos {
   width: 100%;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 /* Footer --------------------------------- */
@@ -419,7 +418,7 @@ a {
     height: 100vh;
     display: flex;
     margin: auto;
-    padding: 10rem;
+    padding: 10rem 0rem;
   }
 
   .nav_menu li {
@@ -448,10 +447,6 @@ a {
 
   .navbar_toggleBtn.active .line2 {
     display: none;
-  }
-
-  .nav_menu li:hover {
-    border-bottom: 2px solid transparent;
   }
 
   /* modal */
@@ -488,7 +483,8 @@ a {
 
   /* Project --------------------------------- */
   .project_section {
-    padding: 0px 16px;
+    display: block;
+    padding: 0px 20px;
   }
 
   .project_container {
@@ -496,8 +492,21 @@ a {
     gap: 30px;
   }
 
+  .heading h1 {
+    font-size: 28px;
+    margin-right: 0;
+  }
+
   .project_title:first-child {
     font-size: 20px;
+  }
+
+  .project_dis {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .project_1 {
+    margin-bottom: 40px;
   }
 
   .project_dis p {
@@ -505,8 +514,7 @@ a {
   }
 
   .heading h1 {
-    font-size: 26px;
-    padding: 60px 0px 30px 0px;
+    padding: 80px 0px 30px 0px;
   }
 
   /* Branding --------------------------------- */
@@ -516,7 +524,8 @@ a {
   }
 
   .logo_section {
-    padding: 0px 16px;
+    display: grid;
+    padding: 0px 20px;
   }
 
   .logo_container {
