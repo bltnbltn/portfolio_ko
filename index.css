@@ -20,6 +20,8 @@
   src: url('./fonts/Pretendard-Bold.woff') format('woff');
 }
 
+
+
 /* Colours --------------------------------- */
 
 :root {
@@ -65,14 +67,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 80px;
+  padding: 0px 70px;
   background-color: transparent;
 }
 
 .nav_menu {
   display: flex;
   font-family: Pretendard-Regular;
-  font-size: 16px;
+  font-size: 17px;
   left: 0;
 }
 
@@ -83,7 +85,7 @@ a {
 }
 
 .nav_menu li a {
-  color: rgb(123, 123, 125);
+  color: rgb(164, 164, 168);
   text-decoration: none;
   padding: 22px;
 }
@@ -182,11 +184,11 @@ a {
 
 .heading h1 {
   margin: auto;
-  font-size: 24px;
+  font-size: 30px;
   font-family: ivypresto-display, serif;
   font-weight: 400;
   color: var(--text-color);
-  margin-right: 200px;
+  margin-right: 270px;
 }
 
 .project_container {
@@ -206,13 +208,14 @@ a {
 
 .project_title:first-child {
   color: var(--text-color);
+  font-family: Pretendard-Regular;
   font-size: 30px;
   margin-bottom: 12px;
 }
 
 .project_dis p {
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* Branding --------------------------------- */
@@ -245,7 +248,7 @@ a {
 .social_link,
 .copyright {
   font-family: Pretendard-Regular;
-  font-size: 12px;
+  font-size: 15px;
   color: #c8c9cb;
   text-align: center;
   letter-spacing: 0.4px;
@@ -339,7 +342,7 @@ a {
   color: #ffffff;
   padding: 10px;
   font-family: Pretendard-Light;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   opacity: 0;
   pointer-events: none;
@@ -360,7 +363,7 @@ a {
   color: #ffffff;
   padding: 10px 0;
   font-family: Pretendard-Light;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 /* The Modal (background) */
@@ -504,10 +507,6 @@ a {
 
   .project_1 {
     margin-bottom: 40px;
-  }
-
-  .project_dis p {
-    font-size: 16px;
   }
 
   .heading h1 {
